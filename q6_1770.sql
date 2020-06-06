@@ -1,0 +1,5 @@
+SELECT	Zooid, COUNT(*)
+FROM	EMPLOYEE, ZOO
+WHERE	Zooid = Zid 
+GROUP BY	Zooid
+HAVING		COUNT(*) > 2;
